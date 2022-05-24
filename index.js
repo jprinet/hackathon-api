@@ -49,12 +49,15 @@ app.get('/scans', function (req, res) {
 
     //TODO get query filter
 
+    //TODO get token
+    const token = ""
+
     const getBuildsRequest = {
         url: 'https://ge.solutions-team.gradle.com/api/builds?since=1649196000000',
         method: 'GET',
         json: true,
         headers: {
-            'Authorization': 'Bearer zubuvlw43gh3xk3geyt5n3qbhg7vpug3jsmv32yrhdrznc7l3qga',
+            'Authorization': token,
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         }
